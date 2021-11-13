@@ -1,20 +1,7 @@
 # PizdOS
 Bare bones ASM kernel, copy-pasted from OSDev. Unusable, only prints `Hello, Kernel World!` and some mysterious character.  
 # Dependencies
-You should install NASM, Make and Grub, unless you've compiled that type of kernels before.  
-## Arch Linux
-```
-sudo pacman -S nasm make grub xorriso mformat
-```
-## Ubuntu/Debian
-```
-sudo apt-get install nasm make grub xorriso
-```
-## Other distros
-I actually have no idea how to install these dependencies on other distros like Fedora or OpenSUSE.  
-But, if you have basic knowledge of what you use, you should be able to install these.  
-## Windows
-No idea how you should run this on Windows, maybe WSL or Cygwin.
+You need to install [GCC Cross-Compiler](https://wiki.osdev.org/GCC_Cross-Compiler) for i686-elf.
 # Compiling
 Actually, compiling this thing is very easy. Just write `make` in the project's directory, and you're ready to go!
 # Generating ISO

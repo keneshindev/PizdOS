@@ -1,7 +1,7 @@
 # PizdOS
 Bare bones ASM kernel, copy-pasted from OSDev. Unusable, only prints `Hello, Kernel World!` and some mysterious character.  
 # Dependencies
-You should install NASM, Make and Grub, unless you're compiled that type of kernels before.  
+You should install NASM, Make and Grub, unless you've compiled that type of kernels before.  
 ## Arch Linux
 ```
 sudo pacman -S nasm make grub xorriso mformat

@@ -1,5 +1,7 @@
+mkdir -p build
 rm -rf build/*.o
-for file in $(ls src | grep .asm); do 
-  nasm -felf32 -o build/$file.o src/$file;
+i686-elf-as src/boot.s -o build/boot.o
+for file in $(ls src | grep .cpp); do
+  i686-elf-g++ -c src/$file -o build/$file.o -ffreestanding -Wall -Wextra -fno-exceptions -fno-rtti
 done
-ld -melf_i386 -T src/linker.ld -o build/PizdOS.bin build/*.asm.o
+i686-elf-gcc -T src/linker.ld -o build/PizdOS.bin -ffreestanding -nostdlib build/*.o -lgcc

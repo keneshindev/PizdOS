@@ -1,5 +1,5 @@
 # PizdOS
-Bare bones ASM kernel, copy-pasted from OSDev. Unusable, only prints `Hello, kernel World!` and `Sus` on new line.  
+Bare bones C++ kernel, (mostly) copy-pasted from OSDev. Unusable, only prints `Hello, kernel World!` and `Sus` on new line.  
 # Dependencies
 You need to install [GCC Cross-Compiler](https://wiki.osdev.org/GCC_Cross-Compiler) for i686-elf.
 # Compiling
